@@ -1,16 +1,18 @@
-
-// 1. Escreva um programa em que o usuário informe dois números. Então escreva em tela o maior deles.
+//2. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
 
 fun main() {
 
-    println("Escreva o primeiro número: ")
-    var n1 = readln().toInt()
-    println("Escreva o segundo número: ")
-    var n2 = readln().toInt()
+    println("Escreva um número, e informaremos se é positivo, negativo ou ZERO: ")
+    var numero = readln().toInt()
 
-    if (n1 > n2) {
-        println("O maior número é o primeiro: ${n1}")
-    }else{
-        println("O número maior é o segundo: ${n2}")
+    if (numero > 0){
+        println("Número positivo: ${numero}")
+    }else if(numero < -0){
+        println("Número negativo: ${numero}")
+    }else if(numero == 0){
+        println("Número igual a Zero: ${numero}")
     }
+
 }
+
+
