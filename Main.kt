@@ -1,18 +1,16 @@
-//2. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
+
+// 1. Escreva um programa em que o usuário informe dois números. Então escreva em tela o maior deles.
 
 fun main() {
 
-    println("Escreva um número, e informaremos se é positivo, negativo ou ZERO: ")
-    var numero = readln().toInt()
+    println("Escreva o primeiro número: ")
+    var n1 = readln().toInt()
+    println("Escreva o segundo número: ")
+    var n2 = readln().toInt()
 
-    if (numero > 0){
-        println("Número positivo: ${numero}")
-    }else if(numero < -0){
-        println("Número negativo: ${numero}")
-    }else if(numero == 0){
-        println("Número igual a Zero: ${numero}")
+    if (n1 > n2) {
+        println("O maior número é o primeiro: ${n1}")
+    }else{
+        println("O número maior é o segundo: ${n2}")
     }
-
 }
-
-
